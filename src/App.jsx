@@ -10,6 +10,7 @@ const App = () => {
   const myUrl = import.meta.env.VITE_BASE_URL;
 
   const handleSubmitButton = async () => {
+    const toastId = toast.loading("Loading...");
     try {
       const result = await axios.post(`${myUrl}/`, { url });
       setShortId(result.data.shortId);
@@ -17,6 +18,7 @@ const App = () => {
     } catch (e) {
       console.error(e);
     }
+    toast.dismiss(toastId);
   };
 
   const handleCopy = () => {
