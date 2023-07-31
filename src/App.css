@@ -32,3 +32,12 @@
 .output {
   font-size: 1.1rem;
 }
+
+@media screen and (max-width: 430px) {
+  .output{
+    font-size: 0.8rem;
+  }
+  .heading{
+    font-size: 2rem;
+  }
+}

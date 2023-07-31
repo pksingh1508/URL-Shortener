@@ -10,7 +10,7 @@ const App = () => {
   const myUrl = import.meta.env.VITE_BASE_URL;
 
   const handleSubmitButton = async () => {
-    const toastId = toast.loading("Loading...");
+    const toastId = toast.loading("Generating...");
     try {
       const result = await axios.post(`${myUrl}/`, { url });
       setShortId(result.data.shortId);
@@ -36,7 +36,7 @@ const App = () => {
     <div className="main-container">
       <div className="container">
         <div className="heaing-container">
-          <h1 className="heading">URL Sortener</h1>
+          <h1 className="heading">URL Shortener</h1>
         </div>
 
         <div className="input-container">
