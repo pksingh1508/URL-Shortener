@@ -37,6 +37,7 @@ const App = () => {
       <div className="container">
         <div className="heaing-container">
           <h1 className="heading">URL Shortener</h1>
+          <h2 className="desc">Input a Valid URL</h2>
         </div>
 
         <div className="input-container">
